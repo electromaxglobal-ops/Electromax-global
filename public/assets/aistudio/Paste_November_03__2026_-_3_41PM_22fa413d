@@ -1,0 +1,1080 @@
+# MASTER DEVELOPMENT PROMPT
+# ELECTROMAX GLOBAL – ENTERPRISE ERP 3.0
+
+## 1. YOUR ROLE
+
+Act as a Senior ERP Software Architect, Full Stack Developer, Manufacturing ERP Consultant, Database Architect, UI/UX Designer, Accounting Specialist, CRM Developer, HRMS Developer and Business Automation Expert.
+
+Your responsibility is to upgrade and develop a professional, fully functional, enterprise-grade ERP application for ELECTROMAX GLOBAL.
+
+This is a real manufacturing business application, not a demo, sample project or static dashboard.
+
+Build a complete, integrated and easy-to-use business management system.
+
+## 2. COMPANY PROFILE AND BRANDING
+
+Official Company Name: ELECTROMAX GLOBAL
+
+Founder & Director: Mr. Sushil Goyal
+
+Location: Jaipur, Rajasthan, India.
+
+Official Company Logo:
+https://electromaxglobal.ai.studio/electromax-logo.png
+
+Official branding requirements:
+
+- Use the above company logo throughout the application.
+- Maintain the original logo proportions and colours.
+- Show the logo on login, dashboard, sidebar, invoices, quotations, purchase orders, challans, packing lists, PDFs and mobile applications.
+- Official leadership information must display:
+
+ELECTROMAX GLOBAL
+Founder & Director: Mr. Sushil Goyal
+
+PERMANENT NAME CORRECTION:
+
+Completely remove all references to:
+
+Kailash Khandelwal
+Managing Director & Founder
+
+Search the entire application, including:
+- Frontend components
+- Backend source code
+- Database records
+- Company profile
+- API responses
+- Configuration files
+- Default values
+- Seed data
+- Footer and headers
+- Published application assets
+- Mobile application
+- Cached content
+
+Replace the incorrect leadership information with:
+
+Mr. Sushil Goyal
+Founder & Director
+
+Do not leave the old name in any visible or active application component. Preserve unrelated historical audit records unless an authorized administrator specifically requests otherwise.
+
+## 3. PLATFORM AND TECHNOLOGY
+
+Build the following:
+
+- Responsive Web ERP
+- Android Application
+- iOS Application
+- Cloud Hosting
+- Local Backup
+- Offline-capable mobile operations
+
+Recommended technology:
+
+Frontend: React + TypeScript
+Mobile: Flutter
+Backend: Python FastAPI
+Database: PostgreSQL
+Cache: Redis
+Background Tasks: Celery
+API: REST API
+Deployment: Docker
+Authentication: Secure role-based authentication
+File Storage: Secure cloud object storage
+Backup: Cloud + Local Server/NAS
+
+Use one centralized backend and database.
+
+## 4. COMPLETE PRODUCT MASTER AND COLOR-WISE SKU
+
+Create an advanced Product Management System.
+
+Initial product categories:
+
+1. Room Heater
+2. Electric Kettle
+3. Pedestal Fan
+4. Table Fan
+5. Wall Fan
+6. Mosquito Bat
+
+Product Master fields:
+
+- Product Name
+- Product Category
+- Brand
+- Model Number
+- Product Description
+- Product Specifications
+- Product Image
+- Product Video
+- HSN Code
+- GST Rate
+- Unit
+- MRP
+- Purchase Rate
+- Selling Rate
+- Manufacturing Cost
+- Weight
+- Dimensions
+- Warranty Period
+- Status
+
+COLOR-WISE SKU GENERATION:
+
+Every product model must have separate SKUs for every available colour.
+
+Example:
+
+Electric Kettle – Model EGJ-1.8L
+
+Black: KET-EGJ18-BLK
+White: KET-EGJ18-WHT
+Red: KET-EGJ18-RED
+Blue: KET-EGJ18-BLU
+
+Requirements:
+
+- Automatic SKU generation.
+- Unique SKU for every colour variant.
+- Separate stock for each colour.
+- Colour-wise sales reports.
+- Colour-wise production reports.
+- Colour-wise purchase and inventory.
+- Barcode generation.
+- QR code generation.
+- SKU search and filtering.
+- Ability to add new colours.
+- Ability to add new models.
+- Ability to edit and deactivate SKUs.
+
+Never combine different colours into one stock record.
+
+## 5. PRODUCT PHOTO AND DOCUMENT UPLOAD
+
+Add image and attachment upload options throughout the entire ERP.
+
+Every relevant module and employee entry form must support photo/document uploads.
+
+Examples:
+
+Product:
+- Product main image.
+- Multiple product images.
+- Model photos.
+- Packaging photos.
+
+Purchase:
+- Material photos.
+- Supplier invoice.
+- Goods received photos.
+- Damaged material photos.
+
+Production:
+- Production stage photos.
+- Material issue photos.
+- Completed product photos.
+- Rejection photos.
+
+Inventory:
+- Stock photos.
+- Physical verification photos.
+- Damage photos.
+
+Sales:
+- Customer product reference images.
+- Quotations and documents.
+
+Dispatch:
+- Packed carton photos.
+- Vehicle photos.
+- Loading photos.
+- Goods photos.
+- LR/Bilty documents.
+
+HR:
+- Employee photograph.
+- Employee documents.
+
+CRM:
+- Customer attachments.
+- Enquiry photos.
+- Communication attachments.
+
+Requirements:
+- Upload from camera or gallery.
+- Multiple photo uploads.
+- Image preview.
+- Delete or replace attachments with permission.
+- File size validation.
+- Secure storage.
+- Link images to their respective transaction IDs.
+- Record uploaded_by and uploaded_at.
+
+## 6. BILL OF MATERIAL – BOM MANAGEMENT
+
+Create a complete BOM management system.
+
+Each product and model should have its own BOM.
+
+BOM fields:
+
+- Finished Product
+- Model Number
+- SKU/Colour Variant
+- Component Name
+- Component SKU
+- Required Quantity
+- Unit
+- Material Rate
+- Wastage Percentage
+- Total Material Cost
+- Labour Cost
+- Manufacturing Overhead
+- Total Production Cost
+
+Features:
+
+- Multiple BOM versions.
+- BOM revision history.
+- Product-wise BOM.
+- Model-wise BOM.
+- Component-wise cost.
+- Automatic material requirement calculation.
+- BOM costing reports.
+- BOM import/export through Excel.
+- BOM approval system.
+
+When a production order is created, calculate the required raw materials automatically.
+
+Allow colour-specific BOMs or variant-specific component overrides wherever required.
+
+## 7. CARTON-WISE PACKING AND CBM CALCULATION
+
+Create an advanced carton and packaging management module.
+
+Fields:
+
+- Product Name
+- Model Number
+- SKU
+- Colour
+- Carton Number
+- Carton Length
+- Carton Width
+- Carton Height
+- Quantity Per Carton
+- Number of Cartons
+- Gross Weight
+- Net Weight
+- Total CBM
+
+Automatic formula:
+
+CBM per carton = (Length × Width × Height) / 1000000
+
+Use this formula when dimensions are entered in centimetres.
+
+Total CBM = CBM per Carton × Number of Cartons.
+
+Features:
+
+- Product-wise carton dimensions.
+- Colour-wise packing details.
+- Multiple packing configurations.
+- Carton-wise quantity.
+- Automatic total cartons.
+- Automatic total quantity.
+- Automatic total CBM.
+- Total gross and net weight.
+- Packing list PDF.
+- Excel export.
+
+## 8. CRM – CUSTOMER RELATIONSHIP MANAGEMENT
+
+Build a complete CRM system.
+
+Features:
+
+- Customer registration.
+- Lead management.
+- Customer enquiry.
+- Lead source tracking.
+- Sales executive assignment.
+- Follow-up scheduling.
+- Call records.
+- Meeting records.
+- WhatsApp communication history.
+- Email history.
+- Customer notes.
+- Customer documents.
+- Quotation history.
+- Order history.
+- Payment history.
+- Outstanding tracking.
+- Customer activity timeline.
+- Lead conversion reports.
+- Customer-wise profitability.
+
+Create a customer portal where customers can see their quotations, orders, payment status, dispatch status and documents.
+
+## 9. SALES QUOTATION, PROFORMA INVOICE AND SALES ORDER
+
+Create the complete sales workflow.
+
+Enquiry → Quotation → Proforma Invoice → Advance Payment → Sales Order → Production/Stock Allocation → Tax Invoice → Dispatch.
+
+Quotation features:
+
+- Professional PDF quotation.
+- Company logo.
+- Customer information.
+- Product photographs.
+- Model-wise SKU.
+- Colour-wise quantity.
+- Rate and discount.
+- GST.
+- Freight.
+- Payment terms.
+- Delivery terms.
+- Validity date.
+- Notes and conditions.
+
+Proforma Invoice features:
+
+- Automatic PI number.
+- Customer details.
+- Product-wise price.
+- Tax calculation.
+- Advance payment requirement.
+- Bank/payment details.
+- QR payment option.
+- PDF generation.
+- Email and WhatsApp sharing.
+
+Allow conversion of an approved quotation into PI and Sales Order without re-entering information.
+
+## 10. PAYMENT GATEWAY AND ADVANCE PAYMENT SYSTEM
+
+Integrate a secure payment gateway such as Razorpay or another approved Indian payment provider.
+
+Requirements:
+
+- Generate customer-specific payment links.
+- Generate dynamic QR codes.
+- Support UPI, cards and net banking as enabled by the provider.
+- Allow percentage-based advance payments.
+- Default advance payment setting: 30%.
+- Allow Admin or Sales Manager to change the advance percentage.
+- Generate payment link from PI or Sales Order.
+- Automatically send payment link through WhatsApp and email.
+- Display payment amount and pending balance.
+- Record transaction reference.
+- Verify payment through signed server-side gateway webhooks.
+- Automatically update payment status.
+- Generate receipt after verified payment.
+- Notify Accounts Department.
+- Reconcile partial and multiple payments.
+- Handle failed, expired, refunded and pending transactions.
+
+IMPORTANT:
+
+Never mark a payment as successful merely because a customer opens a link or uploads a screenshot.
+
+Only verified payment gateway confirmation or authorized bank reconciliation can mark a payment as received.
+
+Never store card numbers, CVV or sensitive payment credentials in the ERP.
+
+## 11. AUTOMATIC ADVANCE ORDER GENERATION
+
+Create an automatic advance order workflow.
+
+When a quotation is accepted and PI is generated:
+
+1. Generate advance payment request.
+2. Calculate configured advance percentage.
+3. Generate payment link and QR code.
+4. Send payment request to customer.
+5. Monitor payment status.
+6. Verify successful payment.
+7. Automatically create or activate the advance sales order.
+8. Notify Sales, Production and Accounts Departments.
+9. Update customer ledger and order timeline.
+
+Support orders with full advance, partial advance and approved credit terms.
+
+## 12. PRODUCTION MANAGEMENT AND LIVE STATUS
+
+Create a complete production management dashboard.
+
+Every sales order must be linked to production when stock is insufficient or production is required.
+
+Production statuses:
+
+- Order Received
+- Pending Approval
+- Material Required
+- Material Available
+- Material Issued
+- Production Scheduled
+- Production Started
+- In Progress
+- Quality Checking
+- Production Completed
+- Finished Goods Received
+- Ready for Dispatch
+
+Features:
+
+- Automatic production order generation.
+- Production planning.
+- BOM material calculation.
+- Material availability check.
+- Work order creation.
+- Production line allocation.
+- Employee allocation.
+- Planned vs actual quantity.
+- Daily production entries.
+- Rejection and wastage.
+- Production stage photo uploads.
+- Completion reports.
+- Production cost calculation.
+
+AUTOMATIC NOTIFICATIONS:
+
+When production starts, notify relevant departments.
+
+When production status changes, update the order timeline.
+
+When production is completed:
+- Notify Sales Department.
+- Notify Dispatch Department.
+- Notify Accounts Department where relevant.
+- Notify Admin.
+- Notify the customer when the order is ready for dispatch, according to configured notification preferences.
+
+## 13. PURCHASE MANAGEMENT AND AUTOMATIC PO
+
+Create a complete Purchase Order Management System.
+
+Workflow:
+
+Material Requirement → Purchase Requisition → Supplier Quotation → Rate Comparison → PO Approval → Purchase Order → Supplier Notification → Follow-up → Dispatch by Supplier → Goods Receipt → Quality Inspection → Purchase Invoice → Payment.
+
+PO requirements:
+
+- Automatic PO numbering.
+- Supplier selection.
+- Item-wise SKU.
+- Colour and model information.
+- Quantity and unit.
+- Purchase rate.
+- GST.
+- Freight.
+- Delivery date.
+- Payment terms.
+- Special instructions.
+- Product/material specifications.
+- Notes and attachments.
+- Company logo.
+- PDF generation.
+
+SUPPLIER COMMUNICATION:
+
+- Automatically email approved PO to supplier.
+- Send WhatsApp notification when integrated and authorized.
+- Include every approved note and instruction.
+- Send order confirmation request.
+- Automatic pending PO follow-up.
+- Expected dispatch reminders.
+- Overdue delivery alerts.
+- Supplier response tracking.
+
+GOODS RECEIPT:
+
+- Record received quantity item-wise.
+- Generate GRN.
+- Upload material photos.
+- Upload supplier challan.
+- Record shortages.
+- Record excess quantities.
+- Record rejected quantities.
+- Generate discrepancy reports.
+- Update stock only after authorized goods receipt and inspection rules.
+
+## 14. CHALLAN GENERATION
+
+Create automatic document generation for:
+
+- Material Issue Challan.
+- Material Transfer Challan.
+- Goods Receipt Challan.
+- Delivery Challan.
+- Sales Dispatch Challan.
+- Job Work Challan.
+- Return Challan.
+
+Each challan must have:
+
+- Unique document number.
+- Date.
+- Customer/supplier details.
+- Product and model.
+- SKU and colour.
+- Quantity.
+- HSN where applicable.
+- Vehicle details where applicable.
+- Remarks.
+- Authorized signature.
+- Company branding.
+
+Generate printable PDF and maintain a searchable document history.
+
+## 15. ADVANCED DISPATCH AND LOGISTICS
+
+Create a professional Dispatch Management System.
+
+Workflow:
+
+Production Completed → Quality Approved → Finished Goods Received → Dispatch Planning → Packing → Vehicle Allocation → Loading → Bilty/LR Upload → Dispatch Confirmation → Customer Tracking → Delivery Confirmation.
+
+Features:
+
+- Order-wise dispatch planning.
+- Partial dispatch.
+- Multiple vehicles.
+- Multiple transporters.
+- Vehicle number.
+- Driver name and mobile.
+- Transporter details.
+- Dispatch date.
+- Loading date.
+- Carton count.
+- Total quantity.
+- Total weight.
+- Total CBM.
+- Freight charges.
+- Delivery address.
+- E-way bill details.
+- LR/Bilty number.
+- Dispatch remarks.
+
+PHOTO UPLOAD AT DISPATCH:
+
+- Vehicle front photograph.
+- Vehicle registration number photograph.
+- Loaded goods photographs.
+- Carton photographs.
+- Loading photographs.
+- Dispatch proof.
+
+Allow employee to upload photographs directly from mobile camera.
+
+## 16. AUTOMATIC BILTY GENERATION AND TRACKING
+
+Create a Bilty/LR Management System.
+
+Features:
+
+- Automatic LR/Bilty record creation.
+- Unique internal document reference.
+- Transporter master.
+- Vehicle number.
+- Invoice reference.
+- Dispatch reference.
+- Carton count.
+- Weight.
+- Freight details.
+- LR/Bilty number.
+- Upload original transporter-issued Bilty/LR.
+- PDF storage.
+- Customer-wise document history.
+
+Do not fabricate an official transporter LR number. Store the actual transporter-issued number and uploaded document.
+
+CUSTOMER TRACKING PORTAL:
+
+Give every customer a secure tracking link.
+
+Customer can view:
+
+- Order confirmation.
+- Advance payment status.
+- Production status.
+- Production completion.
+- Quality approval.
+- Packing status.
+- Dispatch status.
+- Vehicle details where authorized.
+- Transporter information.
+- Uploaded Bilty/LR.
+- Estimated delivery if available.
+- Delivery confirmation.
+
+Automatically notify the customer when production is complete, order is dispatched and delivery status changes.
+
+## 17. EMAIL AND WHATSAPP INTEGRATION
+
+Integrate:
+
+- Business email provider.
+- WhatsApp Business Platform/API.
+- Approved messaging templates.
+- Document sharing.
+- Automated notifications.
+
+Send notifications for:
+
+Customer:
+- Quotation.
+- PI.
+- Payment link.
+- Payment receipt.
+- Order confirmation.
+- Production completion.
+- Dispatch.
+- Bilty/LR.
+- Delivery confirmation.
+
+Supplier:
+- Purchase Order.
+- PO changes.
+- Delivery reminders.
+- Goods receipt discrepancies.
+- Payment updates.
+
+Employees:
+- New order.
+- Production requirement.
+- Purchase approval.
+- Payment confirmation.
+- Dispatch instruction.
+- Task assignment.
+
+Provide delivery status, failure logs, retry controls and communication history.
+
+Respect WhatsApp template approval, opt-in and messaging rules.
+
+## 18. AUTOMATIC PAYMENT FOLLOW-UP
+
+Build an automated customer payment reminder engine.
+
+Features:
+
+- Customer-wise outstanding.
+- Invoice-wise outstanding.
+- Advance payment pending.
+- PI payment pending.
+- Due date.
+- Overdue days.
+- Reminder schedule.
+- WhatsApp reminders.
+- Email reminders.
+- Follow-up history.
+- Sales executive assignment.
+
+Admin can configure reminder schedules, such as:
+
+- Before due date.
+- On due date.
+- 3 days overdue.
+- 7 days overdue.
+- Custom intervals.
+
+Stop reminders automatically when verified payment is received.
+
+Allow authorized staff to pause or override reminders.
+
+## 19. ACCOUNTS DEPARTMENT NOTIFICATIONS
+
+Whenever any customer payment is successfully verified:
+
+- Automatically notify Accounts Department.
+- Display customer name.
+- Payment amount.
+- Transaction reference.
+- Invoice/PI/order number.
+- Payment date.
+- Payment mode.
+- Remaining balance.
+
+Update customer ledger and payment reconciliation.
+
+Notify Sales Department and relevant order owner.
+
+Do not create duplicate receipts when webhook notifications are retried.
+
+## 20. HRMS – COMPLETE HUMAN RESOURCE MANAGEMENT
+
+Create a full HRMS system.
+
+Features:
+
+- Employee master.
+- Employee profile photographs.
+- Joining documents.
+- Employee ID.
+- Department.
+- Designation.
+- Reporting manager.
+- Attendance.
+- Biometric attendance import.
+- Shift management.
+- Leave applications.
+- Leave approvals.
+- Overtime.
+- Salary structure.
+- Payroll.
+- Payslips.
+- EPF and ESIC configuration.
+- Salary deductions.
+- Incentives.
+- Performance appraisal.
+- Employee documents.
+- Employee attendance reports.
+- Employee-wise task allocation.
+
+Allow configurable company HR policies.
+
+Employees should have their own login and dashboard.
+
+## 21. EMPLOYEE-WISE ACCESS CONTROL
+
+Admin must have complete control.
+
+Create roles:
+
+- Super Admin
+- Director
+- Accountant
+- Sales Manager
+- Sales Executive
+- Purchase Manager
+- Production Manager
+- Store Manager
+- Dispatch Manager
+- HR Manager
+- Quality Manager
+- Employee
+
+Admin can create custom roles and change permissions at any time.
+
+Permissions must include:
+
+View
+Create
+Edit
+Approve
+Post
+Cancel
+Delete
+Export
+Print
+
+Also support field-level and department-level access where needed.
+
+Maintain audit logs for sensitive actions.
+
+## 22. AUTOMATIC ORDER DEPARTMENT DISTRIBUTION
+
+When a new customer order is confirmed:
+
+Automatically create relevant tasks and notify:
+
+Sales Department:
+- Order details.
+- Customer requirements.
+- Payment terms.
+
+Accounts Department:
+- PI.
+- Advance payment.
+- Tax and ledger information.
+
+Production Department:
+- Product model.
+- Colour-wise SKU.
+- Required quantity.
+- BOM requirements.
+- Production deadline.
+
+Store Department:
+- Material availability.
+- Raw material issue requirements.
+
+Dispatch Department:
+- Expected completion date.
+- Carton details.
+- Delivery requirements.
+
+All departments should view the same order ID and live status.
+
+Avoid sending production instructions before required order approvals or payment/credit conditions are satisfied.
+
+## 23. DEMO DATA REMOVAL AND BLANK ERP SETUP
+
+This is a very important requirement.
+
+I want a clean, blank and ready-to-use Electromax Global ERP.
+
+Remove all sample and demo business records, including:
+
+- Demo products.
+- Demo SKUs.
+- Demo customers.
+- Demo suppliers.
+- Demo purchase orders.
+- Demo sales orders.
+- Demo invoices.
+- Demo BOM.
+- Demo production records.
+- Demo employees.
+- Demo warehouses.
+- Demo stock quantities.
+- Demo financial transactions.
+- Dummy reports.
+
+Do not permanently remove essential system configuration, database schema, security settings or application functionality.
+
+Create a clean company onboarding process.
+
+Allow Admin to add:
+
+- New products.
+- New models.
+- New colours.
+- New SKUs.
+- New product images.
+- New BOM.
+- New customers.
+- New suppliers.
+- New employees.
+- New warehouses.
+- New opening stock.
+- New financial opening balances.
+
+Provide easy Add, Edit, View, Deactivate and authorized Delete options.
+
+Prevent deletion of records that are referenced by posted accounting or inventory transactions. Use proper archival or cancellation workflows.
+
+Do not include fake business records in the production environment.
+
+## 24. EASY-TO-USE USER INTERFACE
+
+The ERP must be simple enough for factory employees and office staff.
+
+Design principles:
+
+- Clean and professional layout.
+- Simple Hindi and English labels.
+- Clear buttons.
+- Minimal unnecessary fields.
+- Dropdown selection.
+- Searchable product selection.
+- Barcode/QR scanning.
+- Mobile camera upload.
+- Simple forms.
+- Automatic calculations.
+- Guided workflows.
+- Clear success/error messages.
+- Pending task dashboard.
+
+Avoid complicated technical terminology for employees.
+
+Provide separate dashboards for Admin, Director, Sales, Purchase, Production, Accounts, HR, Stores and Dispatch.
+
+## 25. ADVANCED BUSINESS FEATURES – ADD THESE ALSO
+
+A. Multi-Warehouse and Multi-Factory Management.
+
+B. Raw Material, WIP and Finished Goods Tracking.
+
+C. Barcode and QR Label Printing.
+
+D. Physical Stock Verification.
+
+E. Stock Reservation and Reorder Alerts.
+
+F. Sales Return and Replacement Management.
+
+G. Purchase Return and Supplier Debit Notes.
+
+H. Customer and Supplier Ledger.
+
+I. Complete Double-Entry Accounting.
+
+J. GST, TDS, Trial Balance, P&L and Balance Sheet.
+
+K. Expense Management.
+
+L. Bank Reconciliation.
+
+M. Cash Flow and Financial Reports.
+
+N. Product-Wise and Colour-Wise Profitability.
+
+O. Production Cost and Wastage Analysis.
+
+P. Order Profitability Analysis.
+
+Q. Multi-Level Approval Workflows.
+
+R. Document Numbering and Financial Year Management.
+
+S. Automated Backup and Restore.
+
+T. Management Analytics Dashboard.
+
+U. Customer Complaint and Warranty Management.
+
+V. Notification Centre.
+
+W. Global Search.
+
+X. Excel and PDF Import/Export.
+
+Y. Audit Trail and Activity History.
+
+Z. Customer, Supplier and Employee Portals.
+
+## 26. PROFESSIONAL DASHBOARD
+
+Create an attractive Director Dashboard.
+
+Display:
+
+- Today's Sales.
+- Monthly Sales.
+- Total Revenue.
+- Gross Profit.
+- Net Profit.
+- Total Purchase.
+- Customer Outstanding.
+- Supplier Outstanding.
+- Total Inventory Value.
+- Raw Material Stock.
+- WIP Stock.
+- Finished Goods Stock.
+- Pending Production.
+- Completed Production.
+- Pending Dispatch.
+- Dispatched Orders.
+- Pending Advances.
+- Overdue Payments.
+- New Customers.
+- Employee Attendance.
+
+Add graphical analytics and date-wise filters.
+
+All figures must come from actual database records.
+
+## 27. IMPORTANT DEVELOPMENT RULES
+
+1. Inspect the entire existing application before making changes.
+2. Preserve existing working features unless a rebuild is specifically required.
+3. Do not create a static-only UI.
+4. Implement real backend APIs and database persistence.
+5. Build modular, reusable code.
+6. Do not use mock data in production.
+7. Ensure secure role-based access.
+8. Implement complete validation.
+9. Use database transactions for financial and stock operations.
+10. Maintain full transaction history.
+11. Provide error handling and logs.
+12. Test all integrations.
+13. Use secure environment variables.
+14. Never expose API keys.
+15. Implement automated backup and restore.
+16. Ensure web and mobile use the same business logic.
+17. Test responsive design.
+18. Prevent duplicate invoices, orders, payments and stock postings.
+19. Use proper approval workflows.
+20. Never claim completion without actual testing.
+
+## 28. DEVELOPMENT PHASES
+
+PHASE 1:
+Clean application, branding, authentication, company setup, employee access, product master, colour-wise SKU and database.
+
+PHASE 2:
+Inventory, warehouse, stock ledger, BOM and costing.
+
+PHASE 3:
+Purchase, supplier PO, GRN and supplier follow-ups.
+
+PHASE 4:
+Production planning, production tracking, QC and automatic notifications.
+
+PHASE 5:
+CRM, sales quotation, PI, advance orders and payment gateway.
+
+PHASE 6:
+Accounting, GST, receipts, payments and automatic follow-ups.
+
+PHASE 7:
+Dispatch, packing, carton-wise CBM, challan, vehicle photographs and Bilty/LR.
+
+PHASE 8:
+HRMS, employee dashboard, payroll and attendance.
+
+PHASE 9:
+WhatsApp, Email, customer tracking portal and supplier portal.
+
+PHASE 10:
+Flutter mobile applications, offline sync, cloud/local backup and complete testing.
+
+At the end of each phase:
+- Show completed modules.
+- Demonstrate actual working functionality.
+- Show database changes.
+- Test all important workflows.
+- Fix errors.
+- Update documentation.
+- Do not move to the next phase until the current phase is working.
+
+## 29. FINAL EXPECTATION
+
+Deliver a professional, complete and reliable ERP system for Electromax Global.
+
+The system must automate the complete business journey:
+
+Customer Enquiry
+→ CRM
+→ Sales Quotation
+→ Proforma Invoice
+→ Advance Payment
+→ Sales Order
+→ Purchase Requirement
+→ Purchase Order
+→ Material Receipt
+→ Inventory
+→ BOM
+→ Production
+→ Quality Control
+→ Finished Goods
+→ Packing
+→ Carton CBM
+→ Challan
+→ Vehicle Allocation
+→ Dispatch
+→ Bilty/LR
+→ Customer Tracking
+→ Final Payment
+→ Accounting
+→ Reports.
+
+Every module must be interconnected.
+
+The application must be easy for employees, powerful for management and scalable for future business expansion.
+
+FIRST ACTION:
+
+Inspect my existing Electromax Global ERP source code and database.
+
+Prepare a module-wise implementation plan, identify existing functionality, identify missing features, identify demo data and propose safe migration steps.
+
+Then start implementation phase by phase.
+
+Do not just explain how to build it. Actually build the application, test it and provide working results.`}

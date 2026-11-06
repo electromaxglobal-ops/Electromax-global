@@ -1,0 +1,6 @@
+{
+  "name": "Electromax Global ERP 2.0",
+  "description": "Enterprise manufacturing, inventory, production, GST accounting, and multi-warehouse ERP system for Electromax Global & Snow Wave appliances.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
